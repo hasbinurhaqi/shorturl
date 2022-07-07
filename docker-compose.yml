@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: fastapi
+    container_name: shorturl-helper
+    command: uvicorn app.main:app --host 0.0.0.0 --port 80 --reload --debug
+    environment:
+      DEBUG: 1
+    working_dir: /services/app
+    volumes:
+      - .:/services/app
+    ports:
+      - 3000:80
+    restart: on-failure
