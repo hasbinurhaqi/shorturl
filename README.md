@@ -1,4 +1,4 @@
-## About SIMEDIC HELPER
+## About SHORTURL
 
 SHORTURL adalah layanan web services secara fungsi digunakan untuk membantu user dalam proses menyederhanakan nama dari suatu situs.
 
